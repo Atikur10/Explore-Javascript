@@ -45,7 +45,7 @@ console.log('Total Quantity: ' ,shop)
  */
 
 
-
+//  01
 function MindGame(num) {
   return (num * 3 + 10) / 2 - 5;
 }
@@ -55,7 +55,7 @@ let output2 = MindGame(50);
 let output3 = MindGame(33)
 console.log(output1, output2, output3);
 
-
+// 02
 
 function evenOdd(str) {
   if (str.length % 2 === 0) {
@@ -68,7 +68,7 @@ function evenOdd(str) {
 let result = evenOdd('chatgpt');
 console.log(result)
 
-
+// 03
 
 function isLGSeven(number) {
   const difference = number - 7;
@@ -82,22 +82,7 @@ function isLGSeven(number) {
 let output = isLGSeven(15);
 console.log(output)
 
-/* 
-function getSmall(number) {
-    let largest = number[0]
-for(let i = 0; i < number.length; i++){
-    let index = i;
-    let element = number[index];
-    if (element < largest) {
-        largest = element
-    }
-}
-return largest;
-}
-
-let heightCm = [1,2,5];
-let getCount = getSmall(heightCm);
-console.log('Smallest number is: ', getCount) */
+// 04
 
 function findingBadData(arr) {
     let badDataCount = 0;
@@ -114,27 +99,23 @@ let data1 = findingBadData(data);
 console.log(data1);
 
 
+// 05
 
-function gemsToDiamond(x, y, z) {
-    let totalGems = x + y + z;
-    let totalDiamonds = totalGems * 96;
+
+function gemsToDiamond(g1, g2, g3) {
+  let totalDiamond = (g1 * 21) + (g2 * 32) + (g3 * 43); 
   
-    if (totalDiamonds > 1000) {
-      return totalDiamonds - 2000;
-    } else {
-      return totalDiamonds;
-    }
-  }
+  if (totalDiamond > 1000) 
+    return totalDiamond - 2000; 
   
-let getDiamond = gemsToDiamond(1, 1, 1);
-console.log(getDiamond);
+  else
+    return totalDiamond;  
+}
 
 
 
-
-
-
-
+let ss = gemsToDiamond(20, 200, 50);
+console.log(ss)
 
 
 

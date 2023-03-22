@@ -91,3 +91,5 @@ const phoneInformation = phone => {
     <p>Main Features: ${phone.mainFeatures.chipSet}</p>
   `
 }
+
+loadPhone('samsung')
